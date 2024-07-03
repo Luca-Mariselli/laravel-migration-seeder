@@ -8,12 +8,15 @@
                 <p class="fs-4">Treno numero {{ $key }} / Codice: {{ $train['codice_treno'] }}</p>
                 <p>Azienda: {{ $train['azienda'] }}</p>
                 <p>Stazione di partenza: {{ $train['stazione_partenza'] }}</p>
+                <p>Orario di partenza: {{ $train['orario_partenza'] }}</p>
                 <p>Stazione di arrivo: {{ $train['stazione_arrivo'] }}</p>
+                <p>Orario di arrivo: {{ $train['orario_arrivo'] }}</p>
                 @if ($train['cancellato'] == 0)
                     <p>Non Cancellato</p>
                 @else
                     <p>Cancellato</p>
                 @endif
+                <p>Numero di carrozze: {{ $train['numero_carrozze'] }}</p>
             </div>
         @endforeach
     </div>
